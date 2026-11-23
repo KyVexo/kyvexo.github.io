@@ -20,8 +20,8 @@ h1,h2,p{margin:0}h1{font-size:clamp(2.7rem,8vw,5.2rem);line-height:1;letter-spac
 .project{--accent:#ffc46a;--stage:#212b40;background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;display:flex;flex-direction:column}
 .project.lite{--accent:#ff718c;--stage:#352231}
 .preview{height:clamp(180px,26vw,270px);display:grid;place-items:center;overflow:hidden;background:var(--stage);padding:1.3rem}
-.preview img{display:block;width:100%;max-height:100%;object-fit:contain;border-radius:9px;filter:drop-shadow(0 8px 15px #0008)}
-.lite .preview img{width:auto;height:100%}
+.preview img{display:block;width:100%;height:100%;min-height:0;object-fit:contain;border-radius:9px;filter:drop-shadow(0 8px 15px #0008)}
+
 .detail{padding:1.5rem;display:flex;flex-direction:column;flex:1}
 .detail h2{font-size:1.85rem;line-height:1.2}.detail p{color:var(--muted);margin:.7rem 0 1.3rem}
 .actions{margin-top:auto;display:flex;flex-wrap:wrap;gap:.65rem}
@@ -39,12 +39,12 @@ h1,h2,p{margin:0}h1{font-size:clamp(2.7rem,8vw,5.2rem);line-height:1;letter-spac
 </section>
 <div class="projects">
 <article class="project">
-<div class="preview"><img src="img/farotv.jpg" alt="Pantalla principal de FaroTV"></div>
+<div class="preview"><img src="img/farotv-cover.png" alt="Portada de FaroTV"></div>
 <div class="detail"><h2>FaroTV</h2><p>Bloqueo de anuncios, SponsorBlock y personalización del reproductor de YouTube en Android TV.</p>
 <div class="actions"><a class="primary" href="https://morphe.software/add-source?github=KyVexo/farotv-patches&amp;name=FaroTV" aria-label="Agregar FaroTV a Morphe">Agregar a Morphe</a><a href="https://kyvexo.github.io/farotv-patches/" aria-label="Ver el proyecto FaroTV">Ver proyecto</a></div></div>
 </article>
 <article class="project lite">
-<div class="preview"><img src="img/tiktok-lite.png" alt="Ajustes del mod de TikTok Lite"></div>
+<div class="preview"><img src="img/tiktok-lite-cover.jpg" alt="Portada de TikTok Lite Patches"></div>
 <div class="detail"><h2>TikTok Lite</h2><p>Filtro de anuncios del feed y descargas sin marca de agua cuando hay una fuente limpia.</p>
 <div class="actions"><a class="primary" href="https://morphe.software/add-source?github=KyVexo/tiktok-lite-patches&amp;name=TikTok%20Lite" aria-label="Agregar TikTok Lite a Morphe">Agregar a Morphe</a><a href="https://kyvexo.github.io/tiktok-lite-patches/" aria-label="Ver el proyecto TikTok Lite">Ver proyecto</a></div></div>
 </article>
